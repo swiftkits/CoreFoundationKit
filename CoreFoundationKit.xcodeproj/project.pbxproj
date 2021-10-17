@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		135A937E271C7D050047DD31 /* CoreFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135A9375271C7D050047DD31 /* CoreFoundationKit.framework */; };
-		135A9383271C7D050047DD31 /* CoreFoundationKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9382271C7D050047DD31 /* CoreFoundationKitTests.swift */; };
 		135A9384271C7D050047DD31 /* CoreFoundationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 135A9378271C7D050047DD31 /* CoreFoundationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		135A9390271C7EAC0047DD31 /* DateTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */; };
+		135A9393271C80EB0047DD31 /* TestDateTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */; };
+		135A9395271C81280047DD31 /* CoreDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9394271C81280047DD31 /* CoreDateTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +28,9 @@
 		135A9375271C7D050047DD31 /* CoreFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		135A9378271C7D050047DD31 /* CoreFoundationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreFoundationKit.h; sourceTree = "<group>"; };
 		135A937D271C7D050047DD31 /* CoreFoundationKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreFoundationKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		135A9382271C7D050047DD31 /* CoreFoundationKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreFoundationKitTests.swift; sourceTree = "<group>"; };
+		135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeProvider.swift; sourceTree = "<group>"; };
+		135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDateTimeProvider.swift; sourceTree = "<group>"; };
+		135A9394271C81280047DD31 /* CoreDateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDateTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,9 @@
 		135A9377271C7D050047DD31 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				135A9378271C7D050047DD31 /* CoreFoundationKit.h */,
+				135A938E271C7E8B0047DD31 /* Core */,
+				135A938D271C7E7E0047DD31 /* SupportingFiles */,
+				135A9394271C81280047DD31 /* CoreDateTime.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -77,9 +83,25 @@
 		135A9381271C7D050047DD31 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				135A9382271C7D050047DD31 /* CoreFoundationKitTests.swift */,
+				135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		135A938D271C7E7E0047DD31 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				135A9378271C7D050047DD31 /* CoreFoundationKit.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		135A938E271C7E8B0047DD31 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +166,7 @@
 				TargetAttributes = {
 					135A9374271C7D050047DD31 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					135A937C271C7D050047DD31 = {
 						CreatedOnToolsVersion = 13.0;
@@ -191,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135A9390271C7EAC0047DD31 /* DateTimeProvider.swift in Sources */,
+				135A9395271C81280047DD31 /* CoreDateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135A9383271C7D050047DD31 /* CoreFoundationKitTests.swift in Sources */,
+				135A9393271C80EB0047DD31 /* TestDateTimeProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -338,6 +363,7 @@
 		135A9388271C7D050047DD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -356,7 +382,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CoreFoundationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +393,7 @@
 		135A9389271C7D050047DD31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -383,6 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.manish.CoreFoundationKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,6 +422,7 @@
 		135A938B271C7D050047DD31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -412,6 +443,7 @@
 		135A938C271C7D050047DD31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
