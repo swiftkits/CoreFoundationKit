@@ -12,6 +12,8 @@
 		135A9390271C7EAC0047DD31 /* DateTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */; };
 		135A9393271C80EB0047DD31 /* TestDateTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */; };
 		135A9395271C81280047DD31 /* CoreDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A9394271C81280047DD31 /* CoreDateTime.swift */; };
+		136DCAD9271CE50700BD4435 /* SafeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAD8271CE50700BD4435 /* SafeObject.swift */; };
+		136DCADB271CE61B00BD4435 /* TestSafeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCADA271CE61B00BD4435 /* TestSafeObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeProvider.swift; sourceTree = "<group>"; };
 		135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDateTimeProvider.swift; sourceTree = "<group>"; };
 		135A9394271C81280047DD31 /* CoreDateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDateTime.swift; sourceTree = "<group>"; };
+		136DCAD8271CE50700BD4435 /* SafeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeObject.swift; sourceTree = "<group>"; };
+		136DCADA271CE61B00BD4435 /* TestSafeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSafeObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +77,10 @@
 		135A9377271C7D050047DD31 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				136DCAD7271CE4D000BD4435 /* Helpers */,
 				135A938E271C7E8B0047DD31 /* Core */,
+				136DCAD6271CE4B000BD4435 /* Date */,
 				135A938D271C7E7E0047DD31 /* SupportingFiles */,
-				135A9394271C81280047DD31 /* CoreDateTime.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				135A9391271C808E0047DD31 /* TestDateTimeProvider.swift */,
+				136DCADA271CE61B00BD4435 /* TestSafeObject.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -102,6 +108,22 @@
 				135A938F271C7EAC0047DD31 /* DateTimeProvider.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		136DCAD6271CE4B000BD4435 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				135A9394271C81280047DD31 /* CoreDateTime.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		136DCAD7271CE4D000BD4435 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				136DCAD8271CE50700BD4435 /* SafeObject.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				135A9390271C7EAC0047DD31 /* DateTimeProvider.swift in Sources */,
+				136DCAD9271CE50700BD4435 /* SafeObject.swift in Sources */,
 				135A9395271C81280047DD31 /* CoreDateTime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				135A9393271C80EB0047DD31 /* TestDateTimeProvider.swift in Sources */,
+				136DCADB271CE61B00BD4435 /* TestSafeObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
