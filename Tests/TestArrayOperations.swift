@@ -25,4 +25,16 @@ class TestArrayOperations: XCTestCase {
         XCTAssertEqual(ints.prepend([20, 15]), [20, 15, 5])
     }
     
+    func test_safeDeleteAtIndex() {
+        var ints = [Int]()
+        
+        //Empty array
+        XCTAssertNil(ints.safeDelete(at: 3))
+        XCTAssertNil(ints.safeDelete(at: -1))
+        
+        // Add new values
+        ints = [1,2,3]
+        XCTAssertEqual(ints.safeDelete(at: 2), 3)
+    }
+    
 }

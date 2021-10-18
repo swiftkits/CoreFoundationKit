@@ -23,4 +23,11 @@ public extension Array {
         return self
     }
     
+    @discardableResult
+    mutating func safeDelete(at index: Int) -> Element? {
+        if index >= self.count || index < 0 { return nil }
+        
+        return self.remove(at: index)
+    }
+    
 }
