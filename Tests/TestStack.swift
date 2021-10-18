@@ -35,8 +35,13 @@ extension TestStack {
         
         // Push & Test
         self.sut.push(5)
-        
         XCTAssertEqual(self.sut.allItems, [5])
+        
+        // Push more & Test order
+        self.sut.push(3)
+        self.sut.push(5)
+        self.sut.push(10)
+        XCTAssertEqual(self.sut.allItems.last, 10)
     }
     
     func test_popFromStack() {
@@ -45,8 +50,14 @@ extension TestStack {
         
         // Push & Test
         self.sut.push(5)
-        
         XCTAssertEqual(self.sut.pop(), 5)
+        
+        // Push more & Test order
+        self.sut.push(2)
+        self.sut.push(8)
+        self.sut.push(12)
+        XCTAssertEqual(self.sut.pop(), 2)
+        XCTAssertEqual(self.sut.allItems, [8, 12])
     }
     
 }
