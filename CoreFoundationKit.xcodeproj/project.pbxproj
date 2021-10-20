@@ -20,6 +20,8 @@
 		136DCAE5271CEE2500BD4435 /* TestArrayOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAE3271CEE0E00BD4435 /* TestArrayOperations.swift */; };
 		136DCAE8271CF13F00BD4435 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAE7271CF13F00BD4435 /* Stack.swift */; };
 		136DCAEA271CF21E00BD4435 /* TestStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAE9271CF21E00BD4435 /* TestStack.swift */; };
+		136DCAF1271CFBCB00BD4435 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAF0271CFBCB00BD4435 /* DoublyLinkedList.swift */; };
+		136DCAF4271D049100BD4435 /* TestDoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136DCAF2271D048600BD4435 /* TestDoublyLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		136DCAE3271CEE0E00BD4435 /* TestArrayOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestArrayOperations.swift; sourceTree = "<group>"; };
 		136DCAE7271CF13F00BD4435 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		136DCAE9271CF21E00BD4435 /* TestStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStack.swift; sourceTree = "<group>"; };
+		136DCAF0271CFBCB00BD4435 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		136DCAF2271D048600BD4435 /* TestDoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDoublyLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				136DCADF271CE9BF00BD4435 /* TestIntMath.swift */,
 				136DCAE3271CEE0E00BD4435 /* TestArrayOperations.swift */,
 				136DCAE9271CF21E00BD4435 /* TestStack.swift */,
+				136DCAF2271D048600BD4435 /* TestDoublyLinkedList.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				136DCAE7271CF13F00BD4435 /* Stack.swift */,
+				136DCAF0271CFBCB00BD4435 /* DoublyLinkedList.swift */,
 			);
 			path = DataStructure;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			files = (
 				135A9390271C7EAC0047DD31 /* DateTimeProvider.swift in Sources */,
 				136DCADE271CE7D500BD4435 /* Int+Math.swift in Sources */,
+				136DCAF1271CFBCB00BD4435 /* DoublyLinkedList.swift in Sources */,
 				136DCAD9271CE50700BD4435 /* SafeObject.swift in Sources */,
 				136DCAE2271CEC6A00BD4435 /* Array+Operations.swift in Sources */,
 				136DCAE8271CF13F00BD4435 /* Stack.swift in Sources */,
@@ -286,6 +293,7 @@
 				135A9393271C80EB0047DD31 /* TestDateTimeProvider.swift in Sources */,
 				136DCAE0271CE9BF00BD4435 /* TestIntMath.swift in Sources */,
 				136DCAEA271CF21E00BD4435 /* TestStack.swift in Sources */,
+				136DCAF4271D049100BD4435 /* TestDoublyLinkedList.swift in Sources */,
 				136DCADB271CE61B00BD4435 /* TestSafeObject.swift in Sources */,
 				136DCAE5271CEE2500BD4435 /* TestArrayOperations.swift in Sources */,
 			);

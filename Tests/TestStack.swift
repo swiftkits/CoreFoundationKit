@@ -56,8 +56,8 @@ extension TestStack {
         self.sut.push(2)
         self.sut.push(8)
         self.sut.push(12)
-        XCTAssertEqual(self.sut.pop(), 2)
-        XCTAssertEqual(self.sut.allItems, [8, 12])
+        XCTAssertEqual(self.sut.pop(), 12)
+        XCTAssertEqual(self.sut.allItems, [2, 8])
     }
     
 }

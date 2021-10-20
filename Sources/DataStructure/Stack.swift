@@ -20,7 +20,7 @@ public struct Stack<Element: Equatable> {
     public mutating func pop() -> Element? {
         if items.isEmpty { return nil }
         
-        return self.items.removeFirst()
+        return self.items.removeLast()
     }
     
 }
