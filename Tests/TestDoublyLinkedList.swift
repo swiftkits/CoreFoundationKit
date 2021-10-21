@@ -113,3 +113,16 @@ extension TestDoublyLinkedList {
     }
     
 }
+
+// MARK: - Tests All Elements
+extension TestDoublyLinkedList {
+    
+    func test_getAllIElementsWithInsertAndAppend() {
+        self.sut.append(5)
+        self.sut.append(12)
+        self.sut.insert(1)
+        
+        XCTAssertEqual(self.sut.getAllIElements(), [1,5,12])
+    }
+    
+}

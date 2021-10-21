@@ -61,6 +61,18 @@ public class DoublyLinkedList<Element: Equatable> {
         self.head?.updatePreviousElement(pointerTo: nil)
     }
     
+    public func getAllIElements() -> [Element] {
+        var elements = [Element]()
+        
+        var currentLoopHead = self.head
+        while(currentLoopHead != nil) {
+            elements.append(currentLoopHead!.element)
+            currentLoopHead = currentLoopHead?.next
+        }
+        
+        return elements
+    }
+    
     func clear() {
         self.head = nil
         self.tail = nil
