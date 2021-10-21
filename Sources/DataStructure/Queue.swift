@@ -11,14 +11,21 @@ public class Queue<Element: Equatable> {
     
     private var dLinkedList = DoublyLinkedList<Element>()
     
+    public var allElements: [Element] {
+        return self.dLinkedList.getAllIElements()
+    }
+    
     public func enqueue(_ element: Element) {
         self.dLinkedList.append(element)
     }
     
-//    public func dequeue() -> Element? {
-//        if self.dLinkedList.isEmpty { return nil }
-//        
-//        return self.items.removeLast()
-//    }
+    @discardableResult
+    public func dequeue() -> Bool {
+        if self.dLinkedList.isEmpty { return false }
+        
+        self.dLinkedList.delete()
+        
+        return true
+    }
     
 }
