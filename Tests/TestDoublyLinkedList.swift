@@ -126,3 +126,20 @@ extension TestDoublyLinkedList {
     }
     
 }
+
+// MARK: - Tests Clear Elements
+extension TestDoublyLinkedList {
+    
+    func test_ClearWithInsertAndAppend() {
+        self.sut.append(5)
+        self.sut.append(12)
+        self.sut.insert(1)
+        
+        XCTAssertEqual(self.sut.getAllIElements(), [1,5,12])
+        
+        self.sut.clear()
+        
+        XCTAssertEqual(self.sut.getAllIElements(), [])
+    }
+    
+}

@@ -73,7 +73,7 @@ public class DoublyLinkedList<Element: Equatable> {
         return elements
     }
     
-    func clear() {
+    public func clear() {
         self.head = nil
         self.tail = nil
     }
