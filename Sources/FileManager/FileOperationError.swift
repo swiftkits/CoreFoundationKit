@@ -8,7 +8,7 @@
 import Foundation
 
 public enum FileOperationError: Error {
-    
     case emptyData
-    
+    case notFound
+    case accessDenied
 }

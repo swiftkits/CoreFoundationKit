@@ -16,7 +16,8 @@ public protocol FileOperationProvider {
     init(directoryManager: DirectoryManager)
     
     func save(contentsOf data: Data?, with name: String) throws -> FileItem
-    
+    func getFile(at location: URL) throws -> FileItem
+    func deleteFile(at location: URL) throws
 }
 
 public extension FileOperationProvider {
@@ -35,6 +36,26 @@ public extension FileOperationProvider {
         try safeData.write(to: fullFilePath)
         
         return FileItem(name: name, data: safeData, localtion: fullFilePath)
+    }
+    
+    func getFile(at location: URL) throws -> FileItem {
+        guard self.directoryManager.manager.fileExists(atPath: location.path) else {
+            throw FileOperationError.notFound
+        }
+        
+        guard self.directoryManager.manager.isReadableFile(atPath: location.path) else {
+            throw FileOperationError.accessDenied
+        }
+        
+        let fileData = try Data(contentsOf: location)
+        let fileExtension = "." + location.pathExtension
+        let fileName = location.lastPathComponent.replacingOccurrences(of: fileExtension, with: "")
+        
+        return FileItem(name: fileName, data: fileData, localtion: location)
+    }
+    
+    func deleteFile(at location: URL) throws {
+        try self.directoryManager.manager.removeItem(at: location)
     }
     
 }
