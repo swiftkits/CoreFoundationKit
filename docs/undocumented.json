@@ -1,0 +1,152 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/Core/FileManager/FileDirectoryOperationProvider.swift",
+      "line": 66,
+      "symbol": "FileDirectoryOperationProvider.generateFileLocation(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/Core/FileManager/FileDirectoryOperationProvider.swift",
+      "line": 74,
+      "symbol": "FileDirectoryOperationProvider.generateFileLocation(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/Core/FileManager/FileOperationProvider.swift",
+      "line": 14,
+      "symbol": "FileOperationProvider.directoryManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/Date/CoreDateTime.swift",
+      "line": 10,
+      "symbol": "CoreDateTime",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/Date/CoreDateTime.swift",
+      "line": 23,
+      "symbol": "CoreDateTime.init(day:month:year:hour:minute:second:timezone:locale:calendar:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemDirectoryType.swift",
+      "line": 12,
+      "symbol": "FileItemDirectoryType.image",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemDirectoryType.swift",
+      "line": 13,
+      "symbol": "FileItemDirectoryType.document",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemDirectoryType.swift",
+      "line": 14,
+      "symbol": "FileItemDirectoryType.audio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemDirectoryType.swift",
+      "line": 15,
+      "symbol": "FileItemDirectoryType.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemDirectoryType.swift",
+      "line": 16,
+      "symbol": "FileItemDirectoryType.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 12,
+      "symbol": "FileItemType.jpeg",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 13,
+      "symbol": "FileItemType.png",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 14,
+      "symbol": "FileItemType.mp3",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 15,
+      "symbol": "FileItemType.mp4",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 16,
+      "symbol": "FileItemType.pdf",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 17,
+      "symbol": "FileItemType.txt",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileItemType.swift",
+      "line": 18,
+      "symbol": "FileItemType.unknown",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileOperation.swift",
+      "line": 13,
+      "symbol": "FileOperation.directoryManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileOperationError.swift",
+      "line": 12,
+      "symbol": "FileOperationError.emptyData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileOperationError.swift",
+      "line": 13,
+      "symbol": "FileOperationError.notFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/manish/Documents/workspace/CoreFoundationKit/Sources/FileManager/FileOperationError.swift",
+      "line": 14,
+      "symbol": "FileOperationError.accessDenied",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/manish/Documents/workspace/CoreFoundationKit"
+}
