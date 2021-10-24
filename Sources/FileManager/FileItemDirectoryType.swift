@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Parent directory of the local file
 public enum FileItemDirectoryType {
     case image
     case document
@@ -14,6 +15,7 @@ public enum FileItemDirectoryType {
     case video
     case unknown
     
+    /// Name of the local directory
     var name: String {
         switch self {
         case .image:

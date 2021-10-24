@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Type of the individual file item
 public enum FileItemType: String {
     case jpeg
     case png
@@ -19,6 +20,7 @@ public enum FileItemType: String {
 
 public extension FileItemType {
     
+    /// Mime type of the file
     var mimeType: String {
         switch self {
         case .jpeg:
@@ -38,6 +40,7 @@ public extension FileItemType {
         }
     }
     
+    /// Supported Directory, which saves this file type
     var supportedDirectory: FileItemDirectoryType {
         switch self {
         case .jpeg, .png:

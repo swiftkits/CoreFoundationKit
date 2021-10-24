@@ -7,11 +7,19 @@
 
 import Foundation
 
+/// DoublyLinkedList data structure
+///
+/// - Important: Supports traversal from both next and prev nodes
+///
 public class DoublyLinkedList<Element: Equatable> {
     
+    /// First node of the list
     private(set) public var head: DoublyLinkedListItem<Element>?
+    
+    /// Last Node of the list
     private(set) public var tail: DoublyLinkedListItem<Element>?
     
+    /// Indicates whether list is empty or not
     public var isEmpty: Bool { self.head == nil }
     
     /// Inserts element at the front
@@ -61,6 +69,8 @@ public class DoublyLinkedList<Element: Equatable> {
         self.head?.updatePreviousElement(pointerTo: nil)
     }
     
+    /// Fetches all the elements in the list
+    /// - Returns: Array of elelements
     public func getAllIElements() -> [Element] {
         var elements = [Element]()
         
@@ -73,6 +83,7 @@ public class DoublyLinkedList<Element: Equatable> {
         return elements
     }
     
+    /// Removes all the elements from the list
     public func clear() {
         self.head = nil
         self.tail = nil
@@ -97,12 +108,23 @@ extension DoublyLinkedList {
     
 }
 
+/// Individual Node of the `DoublyLinkedList`
 public class DoublyLinkedListItem<Element: Equatable> {
-
+    
+    /// Previous node
     private(set) public var prev: DoublyLinkedListItem<Element>?
+    
+    /// Next node
     private(set) public var next: DoublyLinkedListItem<Element>?
+    
+    /// Value of the node
     private(set) public var element: Element
     
+    /// Creates Node for `DoublyLinkedList` with provided parameters
+    /// - Parameters:
+    ///   - prev: Previous node from this node
+    ///   - next: Next node from this node
+    ///   - element: Value of this node
     public init(prev: DoublyLinkedListItem?,
                 next: DoublyLinkedListItem?,
                 element: Element) {
@@ -111,10 +133,14 @@ public class DoublyLinkedListItem<Element: Equatable> {
         self.element = element
     }
     
+    /// Updates the previous node item to the provided node
+    /// - Parameter newPrev: New previous node, which will be replacing existing
     public func updatePreviousElement(pointerTo newPrev: DoublyLinkedListItem<Element>?) {
         self.prev = newPrev
     }
     
+    /// Updates the next node item to the provided node
+    /// - Parameter newNext: New next node, which will be replacing existing
     public func updateNextElement(pointerTo newNext: DoublyLinkedListItem<Element>?) {
         self.next = newNext
     }

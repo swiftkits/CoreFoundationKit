@@ -11,6 +11,7 @@ import Foundation
 // Check this out https://en.wikipedia.org/wiki/List_of_file_signatures
 public extension Data {
     
+    /// Retuns file tyepe using magic bytes of the current data object
     var fileType: FileItemType {
         let totalByteCount = 10
         

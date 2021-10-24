@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Error type used while working with local files
 public enum FileOperationError: Error {
     case emptyData
     case notFound

@@ -9,14 +9,49 @@ import Foundation
 
 /// Abstract layer of core features for working with local files.
 public protocol FileOperationProvider {
-    
+    /// Local file directory manager supported by the system
     associatedtype DirectoryManager: FileDirectoryOperationProvider
     var directoryManager: DirectoryManager { get }
     
+    /// Create `FileOperationProvider` with provided `DirectoryManager`
     init(directoryManager: DirectoryManager)
     
+    /// Saaved given file data in local file sytem
+    ///
+    /// - Parameters:
+    ///     - contentsOf: data object, that needs to be saved
+    ///     - with: Name used for saving data as file
+    ///
+    /// - Throws:
+    ///     - When data is not valid (nil or empty)
+    ///
+    /// - Returns: Saved `FileItem`
     func save(contentsOf data: Data?, with name: String) throws -> FileItem
+    
+    /// Fetches the file at given location
+    ///
+    /// - Parameters:
+    ///     - at: Location, used for fetching the file
+    ///
+    /// - Throws:
+    ///     - When file is not found
+    ///     - When file is not accessible
+    ///     - When provided url is not a file location
+    ///
+    /// - Returns: Fetched `FileItem`
     func getFile(at location: URL) throws -> FileItem
+    
+    /// Deletes the file at given location
+    ///
+    /// - Parameters:
+    ///     - at: Location, used for deleting the file
+    ///
+    /// - Throws:
+    ///     - When file is not found
+    ///     - When file is not accessible
+    ///     - When provided url is not a file location
+    ///
+    /// - Returns: Fetched `FileItem`
     func deleteFile(at location: URL) throws
 }
 

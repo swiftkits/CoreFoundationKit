@@ -7,19 +7,57 @@
 
 import Foundation
 
+/// Provides core functionalities for working with file directory
 public protocol FileDirectoryOperationProvider {
     
+    /// Local system file manager
     var manager: FileManager { get }
+    
+    /// Root directory inside the aapplication sandbox (local system)
     var rootDir: URL { get }
     
+    /// Creates `FileDirectoryOperationProvider` with provided local file manager and root directory
+    ///
+    /// - Parameters:
+    ///     - manager: Local system file manager
+    ///     - rootDir: Root direcotry inside application sandbox
+    ///
     init(manager: FileManager, rootDir: URL)
     
+    /// Generates local file location with provided data
+    ///
+    /// - Parameters:
+    ///     - for: Data object, used for local file operations
+    ///
+    /// - Throws:
+    ///     - When data is not valid (nil or empty)
+    ///
+    /// - Returns: Local file location
     func generateFileLocation(for rawData: Data?) throws -> URL
     
+    /// Generates local file location with provided data
+    ///
+    /// - Parameters:
+    ///     - for: `FileItemDirectoryType`, used for local file operations
+    ///
+    /// - Returns: Local file location
     func generateFileLocation(for fileFolderType: FileItemDirectoryType) -> URL
     
+    /// Creates a new directory at provided location
+    ///
+    /// - Parameters:
+    ///     - at: Location, where directory should be created
+    ///
+    /// - Throws:
+    ///     - When locatin is not valid or inaccessible
     func createFileDirectory(at location: URL) throws
     
+    /// Check if directory exists at provided location
+    ///
+    /// - Parameters:
+    ///     - location: at which directory is present or not
+    ///
+    /// - Returns: Local file location
     func doesDirectoryExist(at location: URL) -> Bool
 }
 

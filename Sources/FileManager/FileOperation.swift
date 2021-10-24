@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Provides local file operations by implementing `FileDirectoryOperationProvider`
 public struct FileOperation<DirectoryOperation: FileDirectoryOperationProvider>: FileOperationProvider {
     
     public let directoryManager: DirectoryOperation
