@@ -10,4 +10,18 @@ import Foundation
 
 struct MockFileOperationProvider: FileOperationProvider {
     
+    var directoryManager: MockFileDirectoryOperationProvider
+    
+    init(directoryManager: MockFileDirectoryOperationProvider) {
+        self.directoryManager = directoryManager
+    }
+    
+    init() {
+        let fileManager = FileManager.default
+        let rootDir = try! fileManager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        let mockDirOp = MockFileDirectoryOperationProvider(manager: fileManager, rootDir: rootDir)
+        
+        self.directoryManager = mockDirOp
+    }
+    
 }
