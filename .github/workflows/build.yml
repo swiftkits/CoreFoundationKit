@@ -1,0 +1,19 @@
+name: Build & Test CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build for iOS
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build-for-testing -scheme CoreFoundationKit -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
+    - name: Run iOS tests
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild test-without-building -scheme CoreFoundationKitTests -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
