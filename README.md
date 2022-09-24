@@ -1,7 +1,7 @@
 # CoreFoundationKit
 
-![MIT license](https://img.shields.io/github/license/0vertex/CoreFoundationKit)
-![CoreUIKit CI workflow](https://github.com/0vertex/CoreFoundationKit/actions/workflows/build.yml/badge.svg)
+![MIT license](https://img.shields.io/github/license/swiftkits/CoreFoundationKit)
+![CoreUIKit CI workflow](https://github.com/swiftkits/CoreFoundationKit/actions/workflows/build.yml/badge.svg)
 ![Pod](https://img.shields.io/cocoapods/v/CoreFoundationKit)
 ![Carthage](https://img.shields.io/badge/Carthage-Compatible-green)
 ![SPM](https://img.shields.io/badge/SPM-Compatible-green)
@@ -28,7 +28,7 @@ pod 'CoreFoundationKit', '0.1.0'
 The Swift Package Manager is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies. [Learn More!](https://swift.org/package-manager/)
 ```swift
 dependencies: [
-    .package(url: "https://github.com/0vertex/CoreFoundationKit.git", .upToNextMajor(from: "0.1.0"))
+    .package(url: "https://github.com/swiftkits/CoreFoundationKit.git", .upToNextMajor(from: "0.1.0"))
 ]
 ```
 
@@ -39,7 +39,7 @@ github "CoreFoundationKit" ~> 0.1.0
 ```
 
 ## Documentation
-- [CoreFoundationKit Code level doc](https://0vertex.github.io/CoreFoundationKit/)
+- [CoreFoundationKit Code level doc](https://swiftkits.github.io/CoreFoundationKit/)
 
 ## Examples
 - How to setup `FileOperation`
