@@ -15,6 +15,7 @@
 - [Documentation](#documentation)
 - [Examples](#examples)
 - [Learn](#learn)
+- [Author](#author)
 
 ## Installation
 
@@ -80,3 +81,6 @@ try fileOperations.getFile(at: localFileURL)
 Following are the useful links for learning about autolayout.
 - [FileManager](https://developer.apple.com/documentation/foundation/filemanager)
 - [Date](https://developer.apple.com/documentation/foundation/date)
+
+## Author
+Written By Manish Pandey.
